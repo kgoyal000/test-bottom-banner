@@ -1,0 +1,204 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+}
+.mobile-container {
+    width: 98%;
+    position: fixed;
+    bottom: 0px;
+    margin: 0 auto;
+    background: #000;
+    color: #fff;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+.mobile-container .content .popup-header {
+    background-color: #000;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50% 50% 0% 0%;
+}
+.popup-header {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.popup-header p {
+    margin: 0px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    line-height: 28px;
+    padding-top: 10px;
+    font-weight: 500;
+}
+.popup-header p .red {
+    color: #ff167d;
+}
+.mobile-container .content {
+    display: none;
+    padding: 10px;
+    max-height: 70vh;
+}
+.mobile-container .content .steps {
+    max-width: 100%;
+    position: relative;
+    top: -50px;
+    text-align: center;
+}
+.mobile-container .content .steps .step .title {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+}
+.mobile-container .content .steps .step .text-list {
+    padding: 0px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 23px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+.mobile-container .content .steps .step .text-list .item {
+    margin-bottom: 8px;
+    padding: 0 0 0 16px;
+    position: relative;
+}
+.mobile-container .content .steps .step .text-list .item:after {
+    background: #fff;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 5px;
+    left: 0;
+    position: absolute;
+    top: 0.7em;
+    width: 5px;
+}
+.mobile-container .content .steps .step .text-list .item strong {
+    font-weight: 700;
+}
+.mobile-container .content .steps .step p .btn {
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 1.2857142857;
+    padding-bottom: 15px;
+    padding-top: 16px;
+    display: block;
+    width: 100%;
+    background-color: #ff167d;
+    color: #fff;
+    text-decoration: none;
+}
+.swipe .swipe-text:after {
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    content: "";
+    display: block;
+    height: 9px;
+    position: absolute;
+    transform-origin: center;
+    width: 9px;
+    border-color: #ff167d;
+    left: 50%;
+    margin-top: -36px;
+    margin-left: -4px;
+    transform: rotate(-135deg);
+}
+.mobile-container {
+    display: none;
+}
+.desktop-container {
+    position: fixed;
+    bottom: 0px;
+    max-width: 68%;
+    background: #000;
+    color: #fff;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 9999;
+    padding: 0px 60px;
+}
+.desktop-container #bottom-bar {
+    text-align: center;
+}
+.desktop-container #bottom-bar h1 {
+    font-size: 35px;
+    line-height: 45px;
+    margin: 15px 0px 0px;
+    font-weight: 300;
+}
+.desktop-container #bottom-bar .cta {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.desktop-container #bottom-bar .cta .close {
+    border: 1px solid #c4c4c4;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 0px;
+    padding: 0px 7px;
+}
+.desktop-container #bottom-bar .cta .text {
+    padding: 15px 20px 15px 0;
+    text-align: left;
+}
+.desktop-container #bottom-bar .cta .title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    margin: 5px 0px;
+}
+.desktop-container #bottom-bar .cta .description {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 5px 0px;
+}
+.desktop-container #bottom-bar .cta .btn {
+    border: 1px solid;
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 22px;
+    padding: 15px 43px 14px;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: normal;
+    width: auto;
+    color: #ff167d;
+    text-decoration: none;
+}
+@media screen and (max-width: 1200px) {
+    .desktop-container { 
+        max-width: 80%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .mobile-container {
+        display: block;
+    }
+    .desktop-container {
+        display: none;
+    }
+}
+@media screen and (max-width: 320px) {
+    .mobile-container .content {
+        max-height: 80vh;
+    }
+    .popup-header p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}

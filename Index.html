@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Neil Patel</title>
+</head>
+<body>
+    <div class="desktop-container">
+        <div id="bottom-bar">
+            <h1>Business missing out on valuable</h1>
+            <div class="cta">
+                <p class="close">
+                    <img loading="lazy" class="img" src="https://neilpatel.com/wp-content/themes/neilpatel/images/close-t.svg" width="10" height="10" alt="Close">
+                </p>
+                <div class="text">
+                    <p class="title">I hope you enjoy reading this blog post.</p>
+                    <p class="description">If you want my team at Neil Patel Digital to help you get more traffic, just book a call.</p>
+                </div>
+                <p class="btn-w">
+                    <a class="btn" href="https://neilpatel.com/consulting/">Book a Call</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-container">
+        <div class="content">
+            <div class="action">
+                <p class="close" style="display: none;">
+                    <img loading="lazy" class="img" src="https://neilpatel.com/wp-content/themes/neilpatel/images/close-t.svg" width="12" height="12" alt="Close">
+                </p>
+            </div>
+            <div class="steps" style="display: block;">
+                <div class="step step-1">
+                    <p class="img-w">
+                        <img loading="lazy" class="img" src="https://neilpatel.com/wp-content/themes/neilpatel/images/bottom-box-mobile/neil.png" width="165" height="145" alt="Neil Patel">
+                    </p>
+                    <p class="title">See How My Agency Can Drive More Traffic to Your Website</p>
+                    <ul class="text-list">
+                        <li class="item">
+                            <strong>SEO</strong> – unlock more SEO traffic. See real results.
+                        </li>
+                        <li class="item">
+                            <strong>Content Marketing</strong> – our team creates epic content that will get shared, get links, and attract traffic.
+                        </li>
+                        <li class="item">
+                            <strong>Paid Media</strong> – effective paid strategies with clear ROI.
+                        </li>
+                    </ul>
+                    <p>
+                        <a class="btn btn-wrr" href="https://neilpatel.com/consulting/?cf-source=bbm">Book a call</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="popup-header" onclick="toggleWindow()">
+            <p class="swipe">
+                <span class="swipe-text"><span class="red">Swipe Up</span> to Get More Traffic!</span>
+            </p>
+        </div>
+    </div>
+<script>
+   function toggleWindow() {
+  var content = document.querySelector('.content');
+  if (content.style.display === 'none') {
+    content.style.display = 'block';
+  } else {
+    content.style.display = 'none';
+  }
+}
+</script>
+</body>
+</html>
